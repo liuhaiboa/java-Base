@@ -15,7 +15,8 @@ public class Num5Sort {
     //selectionSort1(arr);
     // maopao(arr);
    //Arrays.sort(arr);
-    quickSort(arr,0,arr.length-1);
+   /// quickSort(arr,0,arr.length-1);
+    shellSort(arr);
     printArray(arr);
 }
         /**冒泡排序
@@ -116,6 +117,32 @@ public class Num5Sort {
         //i=2 j=4 start=0 end=6
         quickSort(arr, start, i); //也就是 27 38 13在快速排序
         quickSort(arr, j, end); // 也就是 76, 97, 65在快速排序
+    }
+
+
+
+
+
+    /**
+     * 希尔排序
+     */
+    public static void shellSort(int[] arr) {
+        int length = arr.length;
+        int h = 1;
+        int temp;
+        while (h < length / 3) {
+            h = 3 * h + 1;
+        }
+        while (h >= 1) {
+            for (int i = h; i < length; i++) {
+                for (int j = i; j >= h && arr[j] < arr[j - h]; j -= h) {
+                    temp = arr[j];
+                    arr[j] = arr[j - h];
+                    arr[j - h] = temp;
+                }
+            }
+            h /= 3;
+        }
     }
 
     /**遍历数组元素
