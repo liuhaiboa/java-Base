@@ -119,20 +119,36 @@ public class Num5Sort {
         quickSort(arr, j, end); // 也就是 76, 97, 65在快速排序
     }
 
-
-
+    /**
+     * 插入排序
+     */
+    public static void insertionSort(int[] arr) {
+        int length = arr.length;
+       int temp;
+        for (int i = 1; i < length; i++) {
+            for (int j = i; j > 0 && arr[j]<arr[j - 1]; j--) {
+                temp = arr[j];
+                arr[j] = arr[j - 1];
+                arr[j - 1] = temp;
+            }
+        }
+    }
 
 
     /**
      * 希尔排序
      */
     public static void shellSort(int[] arr) {
-        int length = arr.length;
-        int h = 1;
+        int length = arr.length;//数组中元素个数
+        int h = 1; // 步长
         int temp;
+        // 选择一个步长序列
+        System.out.println(h);
         while (h < length / 3) {
-            h = 3 * h + 1;
+            h = 3 * h + 1;// 1 4 13
+            System.out.println(h);
         }
+        // 按照步长序列 ，将待排序数组分割成h个子序列后进行插入排序
         while (h >= 1) {
             for (int i = h; i < length; i++) {
                 for (int j = i; j >= h && arr[j] < arr[j - h]; j -= h) {
@@ -142,6 +158,7 @@ public class Num5Sort {
                 }
             }
             h /= 3;
+
         }
     }
 
