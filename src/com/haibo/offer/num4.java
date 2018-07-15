@@ -16,8 +16,13 @@ package com.haibo.offer;
       从后往前，先计算需要多少空间，然后从后往前移动，则每个字符只为移动一次，这样效率更高一点。
 */
 public class num4 {
-
-    public String replaceSpace(StringBuffer str) {
+    public static void main(String[] args) {
+        StringBuffer str=new StringBuffer();
+       str.append("i love you ");
+         replaceSpace(str);
+         System.out.print(str);
+    }
+    public static String replaceSpace(StringBuffer str) {
         int spacenum = 0;//spacenum为计算空格数
         for(int i=0;i<str.length();i++){
             if(str.charAt(i)==' ')
@@ -36,7 +41,9 @@ public class num4 {
                 str.setCharAt(indexnew--, str.charAt(indexold));
             }
         }
+
         return str.toString();
+
     }
 
 }
