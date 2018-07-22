@@ -21,6 +21,16 @@ public class qiantao {
 
     }
     @Test
+    public void fori(){
+        for (int i=0;i<10;i++){
+            System.out.println(i);
+        }
+
+        for (int i=0;i<10;++i){
+            System.out.print(i);
+        }
+    }
+    @Test
     public void sanjiao(){
         for(int x=0;x<6;x++){
             for(int y=x;y<6;y++){
