@@ -4,12 +4,12 @@ package com.haibo.producerCosm;
  * Created with IDEA.
  * User:haibo.
  * DATE:2018/7/25/025
+ * 毕向东讲生产消费模型
  */
 public class pc1 {
     public static void main(String[] args)
     {
         Resource r = new Resource();
-
         Producer pro = new Producer(r);
         Consumer con = new Consumer(r);
 
@@ -55,8 +55,6 @@ class Resource
         flag = true;
         this.notifyAll();
     }
-
-
     //  t3   t4
     public synchronized void out()
     {

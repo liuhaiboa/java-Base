@@ -22,7 +22,15 @@ public class Singleton {
         System.out.print("hello world");
     }
 }
+//饿汉式
+class SingleHungry{
+    private final static SingleHungry instance=new SingleHungry();
+    private SingleHungry(){};
+    public static SingleHungry getInstance(){
+        return instance;
+    }
 
+}
 //懒汉式：线程安全
 class SingleLazy{
     private static SingleLazy s=null;
@@ -38,13 +46,5 @@ class SingleLazy{
         return s;
     }
 }
-//饿汉式
-class SingleHungry{
-    private final static SingleHungry instance=new SingleHungry();
-    private SingleHungry(){};
-    public static SingleHungry getInstance(){
-        return instance;
-    }
 
-}
 

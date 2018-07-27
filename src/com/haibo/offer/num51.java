@@ -23,7 +23,7 @@ import java.util.Map;
 //        int size = a.length;
 //        if (size == 0) {
 //            return Integer.MAX_VALUE;
-//            Map<Integer, Integer> m = new HashMap<Integer, Integer>();
+//            Map<Integer, Integer> m = new HashMapTest<Integer, Integer>();
 //            for (int i = 0; i < size; i++) {
 //                if (m.containsKey(a[i])) {
 //                    m.put(a[i], m.get(a[i]) + 1);
@@ -53,7 +53,7 @@ import java.util.Map;
 //
 //}
 
-//        Map<Integer, Integer> map = new HashMap<>();
+//        Map<Integer, Integer> map = new HashMapTest<>();
 //        int count = 0;
 //        int count_2 = 0;
 //        int temp = 0;
