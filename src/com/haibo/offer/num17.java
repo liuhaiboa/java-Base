@@ -8,7 +8,7 @@ package com.haibo.offer;
  * 递归
  */
 public class num17 {
-    public class ListNode {
+     class ListNode {
         int val;
         ListNode next = null;
 

@@ -11,7 +11,8 @@ public class num3 {
 
     public static void main(String[] args) {
         int a[][]={{1,2,8,9},{2,4,9,12},{4,7,10,13},{6,8,11,15}};
-        Find(a,5);
+        Find(a,11);
+        //System.out.print(a[0][2]);
     }
     /*
 利用二维数组由上到下，由左到右递增的规律，
@@ -24,7 +25,7 @@ public class num3 {
         public static boolean Find(int [][] array,int target) {
             int row=0;
             int col=array[0].length-1;//3
-            System.out.print(array.length);
+           // System.out.print(array.length);
             while(row<=array.length-1&&col>=0){
                 if(target==array[row][col])
                     return true;

@@ -26,7 +26,6 @@ public class num16 {
         }
         p2.next=p1;
         head=p2;
-
         return temp;
 
 //        ListNode pPre = null;
@@ -49,7 +48,7 @@ public class num16 {
 
 
 
-    public class ListNode {
+   class ListNode {
         int val;
         ListNode next = null;
         ListNode(int val) {
