@@ -19,7 +19,7 @@ public class ArrayListTest {
         List.add(0,"aa");
         System.out.print(List);
 
-       // List.remove("aa");//可以remove值也可以remove键
+        // List.remove("aa");//可以remove值也可以remove键
 
        // System.out.println("the first element is: "+ List.get(0));
         //System.out.println("the first element is: "+ List.get(1));

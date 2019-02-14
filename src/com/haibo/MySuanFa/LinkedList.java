@@ -73,7 +73,6 @@ public class LinkedList {
         }
 
     public  void reverse(Node head){
-
         Node pReversedHead = head; // 反转后的头节点
         Node pNode = head; // 当前节点
         Node pPreV = null; // 已经反转好的链表的尾部，

@@ -14,9 +14,9 @@ public class num1lianbiao {
         linkedList.addNode(2);
         linkedList.addNode(3);
         linkedList.addNode(4);
-        //node.insertList(2,new Node(4));
+        //MyNode.insertList(2,new Node(4));
         linkedList.print();
-        //System.out.print(node.length());
+        //System.out.print(MyNode.length());
         // 链表逆序
         linkedList.reverse(linkedList.head);
         linkedList.print();

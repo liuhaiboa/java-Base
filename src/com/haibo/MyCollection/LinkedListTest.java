@@ -1,6 +1,10 @@
 package com.haibo.MyCollection;
 
+import com.sun.deploy.util.StringUtils;
+import org.junit.Test;
+
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created with IDEA.
@@ -25,5 +29,14 @@ public class LinkedListTest {
         list.pollFirst();
         System.out.println( list.peekFirst());
 
+
+    }
+@Test
+    public void generateRedisKey() {
+        List<String> keyParts = new LinkedList<>();
+        keyParts.add("q");
+        keyParts.add("w");
+        keyParts.add("e");
+        System.out.print(StringUtils.join(keyParts, ":"));
     }
 }

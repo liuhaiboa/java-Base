@@ -17,7 +17,7 @@ public class num11 {
         node.addNode(9);
         node.addNode(5);
         node.addNode(5);
-        //deleHashTable(node.head);
+        //deleHashTable(MyNode.head);
         deleDup(node.head);
 
         node.print();

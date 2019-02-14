@@ -3,6 +3,7 @@ package com.haibo.MyCode;
 import org.junit.Test;
 
 import java.lang.reflect.Array;
+import java.util.HashMap;
 
 /**
  * Created with IDEA.
@@ -31,6 +32,8 @@ public class Sort {
 
         printArray(arr);
     }
+
+
 
 
     /**
@@ -77,15 +80,8 @@ public class Sort {
                 temp = arr[j];
                 arr[j] = arr[j - 1];
                 arr[j - 1] = temp;
-
             }
-
-
-
         }
-
-
-
 
         printArray(arr);
     }
@@ -120,6 +116,16 @@ public class Sort {
     }
 
 
+    public static void main(String[] args) {
+        HashMap<String,String > map= new HashMap<String,String > ();
+        map.put(null,null);
+        map.put(null,"a");
+        map.put(null,"a");
+        map.put(null,"b");
+        map.put(null,"c");
+        System.out.println(map.get(null));
+
+    }
 
     /**遍历数组元素
      *

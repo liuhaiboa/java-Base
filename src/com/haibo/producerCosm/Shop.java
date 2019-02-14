@@ -25,7 +25,7 @@ public class Shop {
             String a = "面包"+System.currentTimeMillis();
             data.add(a);
             System.out.println("生成了："+a+",找人来吃，现在面包个数为："+data.size());
-            //data.notify();
+            //data.logger();
         }
 
     }

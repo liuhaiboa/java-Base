@@ -4,6 +4,8 @@ package com.haibo.MySocket;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created with IDEA.
@@ -21,5 +23,21 @@ public class TcpClient {//客户端
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+}
+
+
+
+//基本数据类型 + 集合类型 + 循环体 + 判断体 + 方法体
+
+class demo{
+
+    public static void main(String[] args) {
+
+
+    }
+
+    public static void function(){
+
     }
 }
