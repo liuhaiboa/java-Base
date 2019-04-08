@@ -193,7 +193,7 @@ public class MyNode {
 
     }
 
-    ArrayList
+
 
     /** 新建一个头结点，遍历原链表，把每个节点用头结点插入到新建链表中。最后，新建的链表就是反转后的链表。
      * https://www.cnblogs.com/byrhuangqiang/p/4311336.html
